@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-info bg-info">
-                <a class="navbar-brand" href="/">{{setting('site.title')}}</a>
+                <a class="navbar-brand" href="/">Sarkari Jobs</a>
                 <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                     <img src="https://img.icons8.com/plasticine/100/000000/hamburger.png" width="24" height="auto"/>
                 </button>

@@ -19,6 +19,7 @@
           <div id="collapse--{{$key}}" class="collapse show" aria-labelledby="heading--{{$key}}" data-parent="#accordionExample">
             <div class="card-body">
             <h3><a href="{{route('articleshow', $article->id)}}">{{ $article->title}}</a></h3>
+            <p>Posted {{$article->created_at->diffForHumans()}} & Updated {{ $article->updated_at->diffForHumans()}}</p>
                 <p>{{ $article->excerpt}}</p>
             </div>
           </div>

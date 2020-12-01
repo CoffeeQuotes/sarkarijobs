@@ -17,13 +17,12 @@
                 <p class="font-weight-bold"><strong class="mt-5 text-danger">Post Update - </strong><span class="pl-2">{{\Carbon\Carbon::parse($article->updated_at)->format('j F, Y')}}</span></p>
             </div>
         </div>
-        <div class="card-footer bg-info p-2">
-            <p class="text-white">
-                {{$article->excerpt}}
-            </p>
-        </div>
 </div>
-
+<div class="bg-info p-2">
+    <p class="text-white">
+        {{$article->excerpt}}
+    </p>
+</div>
 <div class="pt-5">
 
 </div>
