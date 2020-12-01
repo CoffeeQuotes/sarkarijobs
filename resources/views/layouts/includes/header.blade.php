@@ -19,8 +19,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
     </head>
     <body class="">
-    <div class="container mx-auto">
         @include('layouts.includes.partials.navbar')
-    </div>
 
 

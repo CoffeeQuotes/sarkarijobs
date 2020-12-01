@@ -11,3 +11,12 @@ h6 {
   color: #333333;
 }
 
+.navbar-info .navbar-nav .nav-link {
+  letter-spacing: 2px !important;
+  color: #fefefe;
+}
+
+.navbar .navbar-brand {
+  color: #fefefe;
+}
+
