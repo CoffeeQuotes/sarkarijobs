@@ -33,7 +33,7 @@ class ArticleController extends Controller
         $admitCards = Article::where('type', "Admit Card")->orderBy('id', 'desc')->take(3)->get();
         $certificates = Article::where('type',"Certificates")->orderBy('id', 'desc')->take(3)->get();
         $importants = Article::where('type', "Important")->orderBy('id', 'desc')->take(3)->get();
-        $categories = Category::with('articles')->get();
+        $categories = Category::with('articles')->latest()->get();
         return view('welcome', compact('jobs','results','admissions','syllabus','answerKeys','admitCards','certificates','importants', 'categories'));
     }
 
