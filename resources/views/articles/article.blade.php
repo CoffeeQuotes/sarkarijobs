@@ -14,8 +14,8 @@
 <div class="pt-2">
     <p class="font-weight-bold"><strong class="mt-5 text-danger">Post Update - </strong><span class="pl-2">{{\Carbon\Carbon::parse($article->updated_at)->format('j F, Y')}}</span></p>
 </div>
-<div class="alert alert-primary">
-    <p class="text-primary">
+<div class="bg-info p-2">
+    <p class="text-white">
         {{$article->excerpt}}
     </p>
 </div>

@@ -3,6 +3,30 @@
 @section('content')
 
 <div class="container pt-5">
+
+    @foreach($categories as $key => $category)
+    <div class="row">
+        @foreach($category->articles as $key => $article)
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse--{{$key}}" aria-expanded="true" aria-controls="collapse--{{$key}}">
+                <h3>{{$category->name}}</h3>
+              </button>
+            </h2>
+          </div>
+          <div id="collapse--{{$key}}" class="collapse show" aria-labelledby="heading--{{$key}}" data-parent="#accordionExample">
+            <div class="card-body">
+                <h3>{{ $article->title}}</h3>
+                <p>{{ $article->excerpt}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      @endforeach
+    </div>
+    @endforeach
     <div class="row">
       <div class="col-sm">
           <h3 class="bg-secondary p-1 text-center rounded text-dark">Latest Jobs</h3>

@@ -8,8 +8,7 @@ use App\Article;
 
 class Category extends \TCG\Voyager\Models\Category {
 
-    public function article()
-    {
-      return $this->hasMany('Article:class');
+    public function articles() {
+        return $this->hasMany(Article::class);
     }
 }

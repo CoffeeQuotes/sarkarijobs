@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\Category;
+
 class ArticleController extends Controller
 {
     //
@@ -31,8 +33,12 @@ class ArticleController extends Controller
         $admitCards = Article::where('type', "Admit Card")->orderBy('id', 'desc')->take(3)->get();
         $certificates = Article::where('type',"Certificates")->orderBy('id', 'desc')->take(3)->get();
         $importants = Article::where('type', "Important")->orderBy('id', 'desc')->take(3)->get();
-
-        return view('welcome', compact('jobs','results','admissions','syllabus','answerKeys','admitCards','certificates','importants'));
+        $categories = Category::with('articles')->get();
+        return view('welcome', compact('jobs','results','admissions','syllabus','answerKeys','admitCards','certificates','importants', 'categories'));
     }
 
+    public function indexCategory($id) {
+        $articles = Article::where('category_id', $id)->get();
+        return view('articles.categoryindex', compact('articles'));
+    }
 }
