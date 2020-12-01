@@ -9,7 +9,10 @@
         @foreach($jobs as $key => $job)
             <a href="{{route('article',$job->type)}}">{{$job->title}}
             &nbsp;
-            <span style="letter-spacing: 2px;" class="badge badge-info">{{\Carbon\Carbon::parse($job->updated_at)->format('j F, Y')}}</span></a>
+            @if(\Carbon\Carbon::Now()->diffInDays($job->updated_at) < 7)
+            <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
+            @endif
+            <span style="letter-spacing: 2px;" class="badge badge-info">{{$job->updated_at->diffForHumans()}}</span></a>
         @endforeach
         <br/><br/><br/>
         <a class="btn btn-sm btn-primary" href="{{route('article','Jobs')}}">View All
@@ -20,7 +23,10 @@
         @foreach($results as $key => $result)
             <a href="{{route('article', $result->type)}}">{{$result->title}}
                 &nbsp;
-                <span style="letter-spacing: 2px;" class="badge badge-info">{{\Carbon\Carbon::parse($result->updated_at)->format('j F, Y')}}</span></a>
+                @if(\Carbon\Carbon::Now()->diffInDays($result->updated_at) < 7)
+            <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
+            @endif
+                <span style="letter-spacing: 2px;" class="badge badge-info">{{$result->updated_at->diffForHumans()}}</span></a>
             </a>
         @endforeach
         <br/><br/><br/>
@@ -31,7 +37,10 @@
         @foreach($admissions as $key => $admission)
             <a href="{{route('article', $admission->type)}}">{{$admission->title}}
                 &nbsp;
-                <span style="letter-spacing: 2px;" class="badge badge-info">{{\Carbon\Carbon::parse($admission->updated_at)->format('j F, Y')}}</span></a>
+                @if(\Carbon\Carbon::Now()->diffInDays($admission->updated_at) < 7)
+            <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
+            @endif
+                <span style="letter-spacing: 2px;" class="badge badge-info">{{$admission->updated_at->diffForHumans()}}</span></a>
             </a>
         @endforeach
         <br/><br/><br/>
@@ -44,7 +53,10 @@
           @foreach($syllabus as $key => $syllabi)
             <a href="{{route('article', $syllabi->type)}}">{{$syllabi->title}}
                 &nbsp;
-                <span style="letter-spacing: 2px;" class="badge badge-info">{{\Carbon\Carbon::parse($syllabi->updated_at)->format('j F, Y')}}</span></a>
+                @if(\Carbon\Carbon::Now()->diffInDays($syllabi->updated_at) < 7)
+            <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
+            @endif
+                <span style="letter-spacing: 2px;" class="badge badge-info">{{$syllabi->updated_at->diffForHumans()}}</span></a>
             </a>
           @endforeach
           <br/><br/><br/>
@@ -55,7 +67,10 @@
           @foreach($answerKeys as $key => $answers)
             <a href="{{route('article',$answers->type)}}">{{$answers->title}}
                 &nbsp;
-                <span style="letter-spacing: 2px;" class="badge badge-info">{{\Carbon\Carbon::parse($answers->updated_at)->format('j F, Y')}}</span></a>
+                @if(\Carbon\Carbon::Now()->diffInDays($answers->updated_at) < 7)
+            <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
+            @endif
+                <span style="letter-spacing: 2px;" class="badge badge-info">{{$answers->updated_at->diffForHumans()}}</span></a>
             </a>
           @endforeach
           <br/><br/><br/>
@@ -66,7 +81,10 @@
           @foreach($admitCards as $key => $admit)
             <a href="{{route('article',$admit->type)}}">{{$admit->title}}
                 &nbsp;
-                <span style="letter-spacing: 2px;" class="badge badge-info">{{\Carbon\Carbon::parse($admit->updated_at)->format('j F, Y')}}</span></a>
+                @if(\Carbon\Carbon::Now()->diffInDays($admit->updated_at) < 7)
+            <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
+            @endif
+                <span style="letter-spacing: 2px;" class="badge badge-info">{{$admit->updated_at->diffForHumans()}}</span></a>
             </a>
           @endforeach
           <br/><br/><br/>
@@ -79,7 +97,10 @@
             @foreach($certificates as $key => $certificate)
               <a href="{{route('article', $certificate->type)}}">{{$certificate->title}}
                 &nbsp;
-                <span style="letter-spacing: 2px;" class="badge badge-info">{{\Carbon\Carbon::parse($certificate->updated_at)->format('j F, Y')}}</span></a>
+                @if(\Carbon\Carbon::Now()->diffInDays($certificate->updated_at) < 7)
+            <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
+            @endif
+                <span style="letter-spacing: 2px;" class="badge badge-info">{{$certificate->updated_at->diffForHumans()}}</span></a>
               </a>
             @endforeach
             <br/><br/><br/>
@@ -90,7 +111,10 @@
             @foreach($importants as $key => $importants)
               <a href="{{route('article', $important->type)}}">{{$important->title}}
                 &nbsp;
-                <span style="letter-spacing: 2px;" class="badge badge-info">{{\Carbon\Carbon::parse($important->updated_at)->format('j F, Y')}}</span></a>
+                @if(\Carbon\Carbon::Now()->diffInDays($important->updated_at) < 7)
+            <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
+            @endif
+                <span style="letter-spacing: 2px;" class="badge badge-info">{{$important->updated_at->diffForHumans()}}</span></a>
               </a>
             @endforeach
             <br/><br/><br/>

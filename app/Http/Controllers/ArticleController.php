@@ -23,14 +23,14 @@ class ArticleController extends Controller
 
     public function latestIndex() {
 
-        $jobs = Article::where('type', "Jobs")->limit(10)->get();
-        $results = Article::where('type', "Results")->limit(10)->get();
-        $admissions = Article::where('type', "Admissions")->limit(10)->get();
-        $syllabus = Article::where('type', "Syllabus")->limit(10)->get();
-        $answerKeys = Article::where('type',"Answer keys")->limit(10)->get();
-        $admitCards = Article::where('type', "Admit Card")->limit(10)->get();
-        $certificates = Article::where('type',"Certificates")->limit(10)->get();
-        $importants = Article::where('type', "Important")->limit(10)->get();
+        $jobs = Article::where('type', "Jobs")->orderBy('id', 'desc')->take(3)->get();
+        $results = Article::where('type', "Results")->orderBy('id', 'desc')->take(3)->get();
+        $admissions = Article::where('type', "Admissions")->orderBy('id', 'desc')->take(3)->get();
+        $syllabus = Article::where('type', "Syllabus")->orderBy('id', 'desc')->take(3)->get();
+        $answerKeys = Article::where('type',"Answer keys")->orderBy('id', 'desc')->take(3)->get();
+        $admitCards = Article::where('type', "Admit Card")->orderBy('id', 'desc')->take(3)->get();
+        $certificates = Article::where('type',"Certificates")->orderBy('id', 'desc')->take(3)->get();
+        $importants = Article::where('type', "Important")->orderBy('id', 'desc')->take(3)->get();
 
         return view('welcome', compact('jobs','results','admissions','syllabus','answerKeys','admitCards','certificates','importants'));
     }
