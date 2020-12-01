@@ -1,5 +1,5 @@
 <nav class="navbar fixed-bottom navbar-expand-sm navbar-light"  style="background-color: #313638;">
-    <a class="navbar-brand" href="#">Sarkari Result India</a>
+    <a class="navbar-brand" href="#">Bottom navbar</a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,6 +10,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
     </div>

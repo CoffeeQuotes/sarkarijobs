@@ -16,7 +16,7 @@
         <tbody>
     @foreach($articles as $article )
     <tr>
-    <td><a class="font-weight-bold" href="{{route('articleShow',$article->id)}}">{{$article->title}}</a></td>
+    <td><a class="font-weight-bold" href="{{route('articleshow',$article->id)}}">{{$article->title}}</a></td>
             <td>{{$article->created_at->isoFormat('dddd D')}}</td>
             <td>{{$article->updated_at->isoFormat('dddd D')}}</td>
             <td><span class="badge badge-pill badge-success">{{$article->category->name}}</span></td>

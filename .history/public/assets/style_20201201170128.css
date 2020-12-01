@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'RedWing';
+    src: url('fonts/Redwing-Medium.otf');
+    src: url('fonts/Redwing-Light.otf');
+}
+
+body {
+
+}
+
+h1, h2, h3,  h4 {
+  font-family: 'Work Sans', sans-serif;
+}
+

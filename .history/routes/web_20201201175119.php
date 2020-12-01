@@ -25,5 +25,5 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 Route::get('articles/{type}','ArticleController@index')->name('article');
-Route::get('article/{id}', 'ArticleController@show')->name('articleShow');
+Route::get('article/{id}', 'ArticleController@show')->name('articleshow');
 Route::get('article/category/{id}', 'ArticleController@indexCategory')->name('articleCategory');

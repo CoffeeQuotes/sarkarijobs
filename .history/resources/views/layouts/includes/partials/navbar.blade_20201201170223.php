@@ -1,32 +1,32 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #313638;">
+<nav class="navbar navbar-expand-lg navbar-info ">
                 <a class="navbar-brand" href="/">{{setting('site.title')}}</a>
-                <button class="navbar-toggler" style="background-color: #F09D51;" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                     <img src="https://img.icons8.com/plasticine/100/000000/hamburger.png" width="24" height="auto"/>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarColor03">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                      <a class="nav-link px-2 m-2 badge badge-pill" style="background-color: #F09D51;" href="{{route('article','Jobs')}}">Latest Jobs
+                      <a class="nav-link px-2 m-2 badge badge-pill badge-warning" href="{{route('article','Jobs')}}">Latest Jobs
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link px-2 m-2 badge badge-pill" style="background-color: #F09D51;  " href="{{route('article','Results')}}">Result</a>
+                      <a class="nav-link px-2 m-2 badge badge-pill badge-warning" href="{{route('article','Results')}}">Result</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link px-2 m-2 badge badge-pill" style="background-color: #F09D51;  " href="{{route('article','Admit Card')}}">Admit Card</a>
+                    <a class="nav-link px-2 m-2 badge badge-pill badge-warning" href="{{route('article','Admit Card')}}">Admit Card</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link px-2 m-2 badge badge-pill" style="background-color: #F09D51;  " href="{{route('article','Answer Key')}}">Answer Key</a>
+                      <a class="nav-link px-2 m-2 badge badge-pill badge-warning" href="{{route('article','Answer Key')}}">Answer Key</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link px-2 m-2 badge badge-pill" style="background-color: #F09D51;  " href="{{route('article','Syllabus')}}">Syllabus</a>
+                      <a class="nav-link px-2 m-2 badge badge-pill badge-warning" href="{{route('article','Syllabus')}}">Syllabus</a>
                     </li>
                      <li class="nav-item">
-                      <a class="nav-link px-2 m-2 badge badge-pill" style="background-color: #F09D51;  " href="{{route('article','Admissions')}}">Admission</a>
+                      <a class="nav-link px-2 m-2 badge badge-pill badge-warning" href="{{route('article','Admissions')}}">Admission</a>
                     </li>
                      <li class="nav-item">
-                      <a class="nav-link px-2 m-2 badge badge-pill" style="background-color: #F09D51;  " href="/">Contact Us</a>
+                      <a class="nav-link px-2 m-2 badge badge-pill badge-warning" href="/">Contact Us</a>
                     </li>
                     {{-- <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>

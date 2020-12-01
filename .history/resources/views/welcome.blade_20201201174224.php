@@ -18,7 +18,7 @@
           </div>
           <div id="collapse--{{$key}}" class="collapse show" aria-labelledby="heading--{{$key}}" data-parent="#accordionExample">
             <div class="card-body">
-            <h3><a href="{{route('articleShow', $article->id)}}">{{ $article->title}}</a></h3>
+            <h3><a href="{{route('articleshow', $article->id)}}">{{ $article->title}}</a></h3>
             <p>Posted {{$article->created_at->diffForHumans()}} & Updated {{ $article->updated_at->diffForHumans()}}</p>
                 <p>{{ $article->excerpt}}</p>
             </div>
@@ -37,8 +37,7 @@
             @if(\Carbon\Carbon::Now()->diffInDays($job->updated_at) < 7)
             <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
-            </a>
-            {{$job->updated_at->diffForHumans()}}
+            {{$job->updated_at->diffForHumans()}}</span></a>
         @endforeach
         <br/><br/><br/>
         <a class="btn btn-sm btn-primary" href="{{route('article','Jobs')}}">View All
@@ -52,9 +51,8 @@
                 @if(\Carbon\Carbon::Now()->diffInDays($result->updated_at) < 7)
             <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
+                {{$result->updated_at->diffForHumans()}}</span></a>
             </a>
-                {{$result->updated_at->diffForHumans()}}
-
         @endforeach
         <br/><br/><br/>
         <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
@@ -67,8 +65,8 @@
                 @if(\Carbon\Carbon::Now()->diffInDays($admission->updated_at) < 7)
             <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
+                {{$admission->updated_at->diffForHumans()}}</span></a>
             </a>
-                {{$admission->updated_at->diffForHumans()}}
         @endforeach
         <br/><br/><br/>
         <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
@@ -83,8 +81,8 @@
                 @if(\Carbon\Carbon::Now()->diffInDays($syllabi->updated_at) < 7)
             <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
+                {{$syllabi->updated_at->diffForHumans()}}</span></a>
             </a>
-                {{$syllabi->updated_at->diffForHumans()}}
           @endforeach
           <br/><br/><br/>
           <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
@@ -97,8 +95,8 @@
                 @if(\Carbon\Carbon::Now()->diffInDays($answers->updated_at) < 7)
             <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
-        </a>
-                {{$answers->updated_at->diffForHumans()}}
+                {{$answers->updated_at->diffForHumans()}}</span></a>
+            </a>
           @endforeach
           <br/><br/><br/>
           <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
@@ -111,8 +109,8 @@
                 @if(\Carbon\Carbon::Now()->diffInDays($admit->updated_at) < 7)
             <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
-        </a>
-                {{$admit->updated_at->diffForHumans()}}
+                {{$admit->updated_at->diffForHumans()}}</span></a>
+            </a>
           @endforeach
           <br/><br/><br/>
           <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
@@ -127,8 +125,8 @@
                 @if(\Carbon\Carbon::Now()->diffInDays($certificate->updated_at) < 7)
             <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
-        </a>
-                {{$certificate->updated_at->diffForHumans()}}
+                {{$certificate->updated_at->diffForHumans()}}</span></a>
+              </a>
             @endforeach
             <br/><br/><br/>
             <a class="btn btn-sm btn-primary" href="{{route('article','Important')}}">View All</a>
@@ -141,9 +139,8 @@
                 @if(\Carbon\Carbon::Now()->diffInDays($important->updated_at) < 7)
             <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
-        </a>
                 {{$important->updated_at->diffForHumans()}}
-
+              </a>
             @endforeach
             <br/><br/><br/>
             <a class="btn btn-sm btn-primary" href="{{route('article','Important')}}">View All</a>

@@ -1,5 +1,5 @@
 <nav class="navbar fixed-bottom navbar-expand-sm navbar-light"  style="background-color: #313638;">
-    <a class="navbar-brand" href="#">Sarkari Result India</a>
+    <a class="navbar-brand" href="#">Bottom navbar</a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,6 +10,17 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+        <li class="nav-item dropup">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown10">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
         </li>
       </ul>
     </div>
@@ -24,7 +35,7 @@
     <footer class="py-3">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center flex-column flex-md-row border-bottom pb-2">
-          <h5 class="ml-0 ml-md-3 mb-0"><a href="#">Sarkari Results</a></h5>
+          <h5 class="ml-0 ml-md-3 mb-0"><a href="#">Sarkari Jobs</a></h5>
           <ul class="nav justify-content-center">
             <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Enterprise</a></li>
@@ -35,7 +46,7 @@
         <div class="d-flex justify-content-center align-items-center justify-content-md-between flex-column flex-md-row mx-3 mt-3">
           <div class="d-flex"><a href="#"><img class="mr-3" src="placeholder/icons/twitter.svg" alt=""></a><a href="#"><img class="mr-3" src="placeholder/icons/facebook-f.svg" alt=""></a><a href="#"><img src="placeholder/icons/instagram.svg" alt=""></a></div>
           <div class="d-flex mt-3 mt-md-0">
-            <p class="mb-0 small text-muted">&copy; 2020 Sarkari Results India. All right reserved.</p>
+            <p class="mb-0 small text-muted">&copy; 2020 Sarkari Jobs. All right reserved.</p>
           </div>
         </div>
       </div>
