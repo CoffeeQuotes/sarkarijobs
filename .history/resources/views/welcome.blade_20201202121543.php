@@ -5,7 +5,7 @@
 <div class="container pt-5">
     <nav class="navbar pt-5">
      @foreach($categories as $key => $category)
-        <span class=" m-1 badge badge-pill badge-warning"><a href="{{route('articleCategory', $category->id)}}" class="text-dark m-1">{{$category->name}}</a></span>
+        <span class="badge badge-pill badge-warning"><a href="{{route('articleCategory', $category->id)}}">{{$category->name}}</a></span>
      @endforeach
     </nav>
     @foreach($categories as $key => $category)

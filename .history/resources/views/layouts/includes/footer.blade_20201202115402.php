@@ -9,7 +9,7 @@
     <footer class="py-3">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center flex-column flex-md-row border-bottom pb-2">
-        <h5 class="ml-0 ml-md-3 mb-0"><a href="#">{{setting('site.title')}}</a></h5>
+        <h5 class="ml-0 ml-md-3 mb-0"><a href="#">{{setting(site.title)}}</a></h5>
           <ul class="nav justify-content-center">
             <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Enterprise</a></li>
