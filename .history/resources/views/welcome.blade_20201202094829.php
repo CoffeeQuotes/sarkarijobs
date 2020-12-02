@@ -3,10 +3,14 @@
 @section('content')
 
 <div class="container pt-5">
-    <nav class="navbar">
+    <nav class="navbar navbar-expand">
+        <ul class="navbar-nav mr-auto">
      @foreach($categories as $key => $category)
+     <li class="nav-item">
         <a href="{{route('articleCategory', $category->id)}}">{{$category->name}}</a>
+     </li>
      @endforeach
+        </ul>
     </nav>
     @foreach($categories as $key => $category)
     <div class="row">

@@ -1,5 +1,15 @@
-
-
+<div id='ss_menu'>
+    <div> <i class="fa fa-facebook-official"></i> </div>
+    <div> <i class="fa fa-twitter"></i> </div>
+    <div> <i class="fa fa-linkedin"></i> </div>
+    <div> <i class="fa fa-google-plus"></i> </div>
+    <div class='menu'>
+      <div class='share' id='ss_toggle' data-rot='180'>
+        <div class='circle'></div>
+        <div class='bar'></div>
+      </div>
+    </div>
+  </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <p class="text-center pt-5">

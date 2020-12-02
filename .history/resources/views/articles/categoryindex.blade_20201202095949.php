@@ -1,8 +1,8 @@
 @extends('layouts.app')
-@section('page_title', $category->name)
+
+
 @section('content')
-<h1 class="py-5">{{$category->name}}</h1>
-<table class="table table-responsive-sm table-responsive-sm table-striped">
+<table class="table table-striped">
     <thead>
         <tr>
             <th scope="col">Title</th>
@@ -13,6 +13,7 @@
     </thead>
     <tbody>
 @foreach($articles as $key => $article)
+
 <tr>
     <td><a class="font-weight-bold" href="{{route('articleShow',$article->id)}}">{{$article->title}}</a></td>
             <td>{{$article->created_at->isoFormat('dddd D')}}</td>

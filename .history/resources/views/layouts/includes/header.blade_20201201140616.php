@@ -17,7 +17,6 @@
         <link href="{{ asset('assets/style.css') }}" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
-
     </head>
     <body class="">
         @include('layouts.includes.partials.navbar')

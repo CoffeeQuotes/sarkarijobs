@@ -5,7 +5,9 @@
 <div class="container pt-5">
     <nav class="navbar">
      @foreach($categories as $key => $category)
+     <li class="nav-item">
         <a href="{{route('articleCategory', $category->id)}}">{{$category->name}}</a>
+     </li>
      @endforeach
     </nav>
     @foreach($categories as $key => $category)

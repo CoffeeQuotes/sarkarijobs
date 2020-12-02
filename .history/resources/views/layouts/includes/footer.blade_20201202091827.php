@@ -1,5 +1,47 @@
+<div id='ss_menu'>
+    <div> <i class="fa fa-facebook-official"></i> </div>
+    <div> <i class="fa fa-twitter"></i> </div>
+    <div> <i class="fa fa-linkedin"></i> </div>
+    <div> <i class="fa fa-google-plus"></i> </div>
+    <div class='menu'>
+      <div class='share' id='ss_toggle' data-rot='180'>
+        <div class='circle'></div>
+        <div class='bar'></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(ev) {
+      var toggle = $('#ss_toggle');
+      var menu = $('#ss_menu');
+      var rot;
 
+      $('#ss_toggle').on('click', function(ev) {
+        rot = parseInt($(this).data('rot')) - 180;
+        menu.css('transform', 'rotate(' + rot + 'deg)');
+        menu.css('webkitTransform', 'rotate(' + rot + 'deg)');
+        if ((rot / 180) % 2 == 0) {
+          //Moving in
+          toggle.parent().addClass('ss_active');
+          toggle.addClass('close');
+        } else {
+          //Moving Out
+          toggle.parent().removeClass('ss_active');
+          toggle.removeClass('close');
+        }
+        $(this).data('rot', rot);
+      });
 
+      menu.on('transitionend webkitTransitionEnd oTransitionEnd', function() {
+        if ((rot / 180) % 2 == 0) {
+          $('#ss_menu div i').addClass('ss_animate');
+        } else {
+          $('#ss_menu div i').removeClass('ss_animate');
+        }
+      });
+
+    });
+    </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <p class="text-center pt-5">

@@ -40,9 +40,7 @@ class ArticleController extends Controller
     public function indexCategory($id) {
         $articles = Article::where('category_id', $id)->get();
         $category = Category::findOrFail($id);
-        if($articles->isEmpty()) {
-            return redirect('/');
-        }
-        return view('articles.categoryindex', compact('articles', 'category'));
+        dd($category);
+        return view('articles.categoryindex', compact('articles'));
     }
 }

@@ -1,15 +1,15 @@
 @extends('layouts.app')
-@section('page_title', $category->name)
+
+
 @section('content')
-<h1 class="py-5">{{$category->name}}</h1>
-<table class="table table-responsive-sm table-responsive-sm table-striped">
+<table class="table table-striped">
     <thead>
         <tr>
             <th scope="col">Title</th>
             <th scope="col">Notification</th>
             <th scope="col">Update</th>
             <th scope="col">Type<th>
-            </tr>
+        </tr>
     </thead>
     <tbody>
 @foreach($articles as $key => $article)
