@@ -34,7 +34,7 @@
     @endforeach
     <div class="row py-5">
       <div class="col-sm">
-          <h3 class=" p-1 text-center rounded text-white bg-dark">Latest Jobs</h3>
+          <h3 class=" p-1 text-center rounded text-dark bg-dark">Latest Jobs</h3>
         @foreach($jobs as $key => $job)
             <a href="{{route('article',$job->type)}}">{{$job->title}}
             &nbsp;
@@ -49,7 +49,7 @@
         </a>
       </div>
       <div class="col-sm">
-          <h3 class="  p-1 text-center rounded text-white bg-dark">Results</h3>
+          <h3 class="  p-1 text-center rounded text-dark bg-dark">Results</h3>
         @foreach($results as $key => $result)
             <a href="{{route('article', $result->type)}}">{{$result->title}}
                 &nbsp;
@@ -64,7 +64,7 @@
         <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
       </div>
       <div class="col-sm">
-        <h3 class="  p-1 text-center rounded text-white bg-dark">Admissions</h3>
+        <h3 class="  p-1 text-center rounded text-dark bg-dark">Admissions</h3>
         @foreach($admissions as $key => $admission)
             <a href="{{route('article', $admission->type)}}">{{$admission->title}}
                 &nbsp;
@@ -80,7 +80,7 @@
     </div>
     <div class="row mt-5">
         <div class="col-sm">
-            <h3 class="  p-1 text-center rounded text-white bg-dark">Syllabus</h3>
+            <h3 class="  p-1 text-center rounded text-dark bg-dark">Syllabus</h3>
           @foreach($syllabus as $key => $syllabi)
             <a href="{{route('article', $syllabi->type)}}">{{$syllabi->title}}
                 &nbsp;
@@ -94,7 +94,7 @@
           <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
         </div>
         <div class="col-sm">
-            <h3 class="  p-1 text-center rounded text-white bg-dark">Answer Keys</h3>
+            <h3 class="  p-1 text-center rounded text-dark bg-dark">Answer Keys</h3>
           @foreach($answerKeys as $key => $answers)
             <a href="{{route('article',$answers->type)}}">{{$answers->title}}
                 &nbsp;
@@ -108,7 +108,7 @@
           <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
         </div>
         <div class="col-sm">
-            <h3 class="  p-1 text-center rounded text-white bg-dark">Admit Card</h3>
+            <h3 class="  p-1 text-center rounded text-dark bg-dark">Admit Card</h3>
           @foreach($admitCards as $key => $admit)
             <a href="{{route('article',$admit->type)}}">{{$admit->title}}
                 &nbsp;
@@ -124,7 +124,7 @@
       </div>
       <div class="row mt-5">
           <div class="col-sm">
-            <h3 class="  p-1 text-center rounded text-white bg-dark">Certificates</h3>
+            <h3 class="  p-1 text-center rounded text-dark bg-dark">Certificates</h3>
             @foreach($certificates as $key => $certificate)
               <a href="{{route('article', $certificate->type)}}">{{$certificate->title}}
                 &nbsp;
@@ -138,7 +138,7 @@
             <a class="btn btn-sm btn-primary" href="{{route('article','Important')}}">View All</a>
           </div>
           <div class="col-sm">
-            <h3 class="  p-1 text-center rounded text-white bg-dark">Importants</h3>
+            <h3 class="  p-1 text-center rounded text-dark bg-dark">Importants</h3>
             @foreach($importants as $key => $importants)
               <a href="{{route('article', $important->type)}}">{{$important->title}}
                 &nbsp;
