@@ -39,7 +39,6 @@
             <a href="{{route('article',$job->type)}}">{{$job->title}}
             &nbsp;
             @if(\Carbon\Carbon::Now()->diffInDays($job->updated_at) < 7)
-              <br/>
             <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
             </a>
@@ -56,8 +55,7 @@
             <a href="{{route('article', $result->type)}}">{{$result->title}}
                 &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($result->updated_at) < 7)
-              <br/>
-                <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
+            <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
             </a>
                 {{$result->updated_at->diffForHumans()}}
@@ -72,8 +70,7 @@
             <a href="{{route('article', $admission->type)}}">{{$admission->title}}
                 &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($admission->updated_at) < 7)
-              <br/>
-                <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
+            <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
             </a>
                 {{$admission->updated_at->diffForHumans()}}
@@ -90,8 +87,7 @@
             <a href="{{route('article', $syllabi->type)}}">{{$syllabi->title}}
                 &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($syllabi->updated_at) < 7)
-              <br/>
-                <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
+            <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
             </a>
                 {{$syllabi->updated_at->diffForHumans()}}
@@ -106,8 +102,7 @@
             <a href="{{route('article',$answers->type)}}">{{$answers->title}}
                 &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($answers->updated_at) < 7)
-              <br/>
-                <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
+            <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
         </a>
                 {{$answers->updated_at->diffForHumans()}}
@@ -122,8 +117,7 @@
             <a href="{{route('article',$admit->type)}}">{{$admit->title}}
                 &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($admit->updated_at) < 7)
-              <br/>
-                <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
+            <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
         </a>
                 {{$admit->updated_at->diffForHumans()}}
@@ -140,8 +134,7 @@
               <a href="{{route('article', $certificate->type)}}">{{$certificate->title}}
                 &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($certificate->updated_at) < 7)
-                <br/>
-                <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
+            <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
         </a>
                 {{$certificate->updated_at->diffForHumans()}}
@@ -156,8 +149,7 @@
               <a href="{{route('article', $important->type)}}">{{$important->title}}
                 &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($important->updated_at) < 7)
-                <br/>
-                <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
+            <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
         </a>
                 {{$important->updated_at->diffForHumans()}}
