@@ -12,7 +12,9 @@
         <h5 class="ml-0 ml-md-3 mb-0"><a href="#">{{setting('site.title')}}</a></h5>
           <ul class="nav justify-content-center">
             <li class="nav-item"><a class="nav-link" href="{{route('privacy')}}">Privacy</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{route('terms')}}">Terms & Conditions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Enterprise</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ICO</a></li>
           </ul>
         </div>
         <div class="d-flex justify-content-center align-items-center justify-content-md-between flex-column flex-md-row mx-3 mt-3">

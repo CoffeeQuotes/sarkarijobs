@@ -1,7 +1,5 @@
 @extends('layouts.app')
 @section('page_title', $article->title)
-@section('keywords', $article->meta_keyword)
-@section('description', $article->meta_description)
 
 @section('content')
 <div class="pt-5">

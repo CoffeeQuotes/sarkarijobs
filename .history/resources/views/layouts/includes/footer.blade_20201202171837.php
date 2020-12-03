@@ -13,6 +13,8 @@
           <ul class="nav justify-content-center">
             <li class="nav-item"><a class="nav-link" href="{{route('privacy')}}">Privacy</a></li>
             <li class="nav-item"><a class="nav-link" href="{{route('terms')}}">Terms & Conditions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ICO</a></li>
           </ul>
         </div>
         <div class="d-flex justify-content-center align-items-center justify-content-md-between flex-column flex-md-row mx-3 mt-3">
