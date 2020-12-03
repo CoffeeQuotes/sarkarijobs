@@ -25,13 +25,13 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 Route::get('articles/{type}','ArticleController@index')->name('article');
-Route::get('/{slug}', 'ArticleController@show')->name('articleShow');
+Route::get('article/{slug}', 'ArticleController@show')->name('articleShow');
 Route::get('article/category/{id}', 'ArticleController@indexCategory')->name('articleCategory');
 
-Route::get('about/privacy-policy', function() {
+Route::get('/privacy-policy', function() {
     return view('extra.privacy');
 })->name('privacy');
 
-Route::get('about/terms-&-condition', function() {
+Route::get('/terms-&-condition', function() {
     return view('extra.terms');
 })->name('terms');
