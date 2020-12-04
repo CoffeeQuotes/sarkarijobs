@@ -29,7 +29,7 @@
 <div class="pt-5">
 
 </div>
-<div class="pt-2 d-flex justify-content-center">
+<div class="pt-2 mx-auto">
     {!! $article->description !!}
 </div>
 
