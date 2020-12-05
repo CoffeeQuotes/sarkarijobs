@@ -36,7 +36,7 @@ class ArticleController extends Controller
         $certificates = Article::where('type',"Certificates")->orderBy('id', 'desc')->take(3)->get();
         $importants = Article::where('type', "Important")->orderBy('id', 'desc')->take(3)->get();
         $categories = Category::with('articles')->latest()->get();
-        $hotlinks = Hotlink::orderBy('id', 'desc')->take(10)->get();
+        $hotlinks = DB::table('hotlinks')->latest(5)->first();
         return view('welcome', compact('jobs','results','admissions','syllabus','answerKeys','admitCards','certificates','importants', 'categories', 'hotlinks'));
     }
 

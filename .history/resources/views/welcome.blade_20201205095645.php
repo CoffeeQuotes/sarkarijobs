@@ -5,8 +5,8 @@
 <div class="container pt-5">
     <div class="d-flex flex-wrap">
         @foreach($hotlinks as $key => $hotlink)
-    <div class="p-2 m-1 bg-primary">
-            <a class="text-white font-weight-bolder" data-toggle="tooltip" data-placement="bottom" title="{{$hotlink->title}}" href="{{$hotlink->url}}"><span class="blinking">{{\Illuminate\Support\Str::limit($hotlink->title, 30, $end='...')}}</span></a>
+    <div class="p-2" style="background-color: #9{{9-$key}}{{6+$key}}6{{$key}}6">
+            <a class="text-white" href="{{$hotlink->url}}">{{$hotlink->title}}</a>
             </div>
         @endforeach
     </div>
@@ -176,16 +176,4 @@
           </div>
       </div>
   </div>
-  <style>
-    .blinking{
-  animation:blinkingText 2.6s infinite;
-}
-@keyframes blinkingText{
-  0%{		color: #fff;	}
-  49%{	color: #FFFF00;	}
-  /*50%{	color: transparent;	}*/
-  /*99%{	color:transparent;	}*/
-  100%{	color: #fff;	}
-}
-</style>
 @endSection

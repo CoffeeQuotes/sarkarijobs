@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Article;
 use App\Category;
 use App\Hotlink;
-use Illuminate\Support\Facades\DB;
+
 class ArticleController extends Controller
 {
     //
@@ -36,7 +36,7 @@ class ArticleController extends Controller
         $certificates = Article::where('type',"Certificates")->orderBy('id', 'desc')->take(3)->get();
         $importants = Article::where('type', "Important")->orderBy('id', 'desc')->take(3)->get();
         $categories = Category::with('articles')->latest()->get();
-        $hotlinks = Hotlink::orderBy('id', 'desc')->take(10)->get();
+        $hotlinks = Hotlink::all()->take(10);
         return view('welcome', compact('jobs','results','admissions','syllabus','answerKeys','admitCards','certificates','importants', 'categories', 'hotlinks'));
     }
 

@@ -176,16 +176,4 @@
           </div>
       </div>
   </div>
-  <style>
-    .blinking{
-  animation:blinkingText 2.6s infinite;
-}
-@keyframes blinkingText{
-  0%{		color: #fff;	}
-  49%{	color: #FFFF00;	}
-  /*50%{	color: transparent;	}*/
-  /*99%{	color:transparent;	}*/
-  100%{	color: #fff;	}
-}
-</style>
 @endSection

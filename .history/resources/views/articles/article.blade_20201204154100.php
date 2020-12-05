@@ -32,10 +32,5 @@
 <div class="pt-2 d-flex justify-content-md-center">
     {!! $article->description !!}
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script>
-    $("table").addClass("table-responsive");
-
-</script>
 @endsection
