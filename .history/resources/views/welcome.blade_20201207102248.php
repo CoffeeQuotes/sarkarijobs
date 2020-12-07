@@ -42,7 +42,6 @@
     <div class="row py-5">
       <div class="col-sm">
           <h3 class=" p-1 text-center rounded text-white bg-dark">Latest Jobs</h3>
-
         @foreach($jobs as $key => $job)
             <a href="{{route('articleShow',$job->slug)}}">{{$job->title}}
             &nbsp;
@@ -55,9 +54,7 @@
             <br/>
         @endforeach
         <br/><br/><br/>
-        @if($jobs->isNotEmpty())
         <a class="btn btn-sm btn-primary" href="{{route('article','Jobs')}}">View All
-        @endif
         </a>
       </div>
       <div class="col-sm">
@@ -74,9 +71,7 @@
             <br/>
         @endforeach
         <br/><br/><br/>
-         @if($results->isNotEmpty())
         <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
-        @endif
       </div>
       <div class="col-sm">
         <h3 class="  p-1 text-center rounded text-white bg-dark">Admissions</h3>
@@ -92,9 +87,7 @@
                 <br>
         @endforeach
         <br/><br/><br/>
-         @if($admissions->isNotEmpty())
         <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
-        @endif
       </div>
     </div>
     <div class="row mt-5">
@@ -112,9 +105,7 @@
                 <br>
           @endforeach
           <br/><br/><br/>
-           @if($syllabus->isNotEmpty())
           <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
-          @endif
         </div>
         <div class="col-sm">
             <h3 class="  p-1 text-center rounded text-white bg-dark">Answer Keys</h3>
@@ -130,9 +121,7 @@
                 <br>
           @endforeach
           <br/><br/><br/>
-           @if($importants->isNotEmpty())
           <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
-          @endif
         </div>
         <div class="col-sm">
             <h3 class="  p-1 text-center rounded text-white bg-dark">Admit Card</h3>
@@ -148,9 +137,7 @@
                 <br>
           @endforeach
           <br/><br/><br/>
-           @if($admitCards->isNotEmpty())
           <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
-          @endif
         </div>
       </div>
       <div class="row mt-5">
@@ -168,9 +155,7 @@
                 <br>
             @endforeach
             <br/><br/><br/>
-            @if($certificates->isNotEmpty())
             <a class="btn btn-sm btn-primary" href="{{route('article','Important')}}">View All</a>
-            @endif
           </div>
           <div class="col-sm">
             <h3 class="  p-1 text-center rounded text-white bg-dark">Importants</h3>
@@ -187,9 +172,7 @@
 
             @endforeach
             <br/><br/><br/>
-             @if($importants->isNotEmpty())
             <a class="btn btn-sm btn-primary" href="{{route('article','Important')}}">View All</a>
-            @endif
           </div>
       </div>
   </div>

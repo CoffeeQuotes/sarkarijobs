@@ -15,7 +15,7 @@
         <span class=" m-1 badge badge-pill badge-warning"><a href="{{route('articleCategory', $category->id)}}" class="text-dark m-1">{{$category->name}}</a></span>
      @endforeach
     </nav>
-    {{-- @foreach($categories as $key => $category)
+    @foreach($categories as $key => $category)
     <div class="row">
         @foreach($category->articles as $key => $article)
     <div class="accordion" id="accordionExample">
@@ -38,13 +38,12 @@
       </div>
       @endforeach
     </div>
-    @endforeach --}}
+    @endforeach
     <div class="row py-5">
       <div class="col-sm">
           <h3 class=" p-1 text-center rounded text-white bg-dark">Latest Jobs</h3>
-
         @foreach($jobs as $key => $job)
-            <a href="{{route('articleShow',$job->slug)}}">{{$job->title}}
+            <a href="{{route('articleShow',$job->title)}}">{{$job->title}}
             &nbsp;
             @if(\Carbon\Carbon::Now()->diffInDays($job->updated_at) < 7)
               <br/>
@@ -55,15 +54,13 @@
             <br/>
         @endforeach
         <br/><br/><br/>
-        @if($jobs->isNotEmpty())
         <a class="btn btn-sm btn-primary" href="{{route('article','Jobs')}}">View All
-        @endif
         </a>
       </div>
       <div class="col-sm">
           <h3 class="  p-1 text-center rounded text-white bg-dark">Results</h3>
         @foreach($results as $key => $result)
-            <a href="{{route('articleShow', $result->slug)}}">{{$result->title}}
+            <a href="{{route('articleShow', $result->title)}}">{{$result->title}}
                 &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($result->updated_at) < 7)
               <br/>
@@ -74,14 +71,12 @@
             <br/>
         @endforeach
         <br/><br/><br/>
-         @if($results->isNotEmpty())
         <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
-        @endif
       </div>
       <div class="col-sm">
         <h3 class="  p-1 text-center rounded text-white bg-dark">Admissions</h3>
         @foreach($admissions as $key => $admission)
-            <a href="{{route('articleShow', $admission->slug)}}">{{$admission->title}}
+            <a href="{{route('articleShow', $admission->title)}}">{{$admission->title}}
                 &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($admission->updated_at) < 7)
               <br/>
@@ -92,16 +87,14 @@
                 <br>
         @endforeach
         <br/><br/><br/>
-         @if($admissions->isNotEmpty())
         <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
-        @endif
       </div>
     </div>
     <div class="row mt-5">
         <div class="col-sm">
             <h3 class="  p-1 text-center rounded text-white bg-dark">Syllabus</h3>
           @foreach($syllabus as $key => $syllabi)
-            <a href="{{route('articleShow', $syllabi->slug)}}">{{$syllabi->title}}
+            <a href="{{route('articleShow', $syllabi->title)}}">{{$syllabi->title}}
                 &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($syllabi->updated_at) < 7)
               <br/>
@@ -112,14 +105,12 @@
                 <br>
           @endforeach
           <br/><br/><br/>
-           @if($syllabus->isNotEmpty())
           <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
-          @endif
         </div>
         <div class="col-sm">
             <h3 class="  p-1 text-center rounded text-white bg-dark">Answer Keys</h3>
           @foreach($answerKeys as $key => $answers)
-            <a href="{{route('articleShow',$answers->slug)}}">{{$answers->title}}
+            <a href="{{route('articleShow',$answers->title)}}">{{$answers->title}}
                 &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($answers->updated_at) < 7)
               <br/>
@@ -130,14 +121,12 @@
                 <br>
           @endforeach
           <br/><br/><br/>
-           @if($importants->isNotEmpty())
           <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
-          @endif
         </div>
         <div class="col-sm">
             <h3 class="  p-1 text-center rounded text-white bg-dark">Admit Card</h3>
           @foreach($admitCards as $key => $admit)
-            <a href="{{route('articleShow',$admit->slug)}}">{{$admit->title}}
+            <a href="{{route('articleShow',$admit->title)}}">{{$admit->title}}
                 &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($admit->updated_at) < 7)
               <br/>
@@ -148,16 +137,14 @@
                 <br>
           @endforeach
           <br/><br/><br/>
-           @if($admitCards->isNotEmpty())
           <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
-          @endif
         </div>
       </div>
       <div class="row mt-5">
           <div class="col-sm">
             <h3 class="  p-1 text-center rounded text-white bg-dark">Certificates</h3>
             @foreach($certificates as $key => $certificate)
-              <a href="{{route('articleShow', $certificate->slug)}}">{{$certificate->title}}
+              <a href="{{route('articleShow', $certificate->title)}}">{{$certificate->title}}
                 &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($certificate->updated_at) < 7)
                 <br/>
@@ -168,14 +155,12 @@
                 <br>
             @endforeach
             <br/><br/><br/>
-            @if($certificates->isNotEmpty())
             <a class="btn btn-sm btn-primary" href="{{route('article','Important')}}">View All</a>
-            @endif
           </div>
           <div class="col-sm">
             <h3 class="  p-1 text-center rounded text-white bg-dark">Importants</h3>
             @foreach($importants as $key => $importants)
-              <a href="{{route('articleShow', $important->slug)}}">{{$important->title}}
+              <a href="{{route('articleShow', $important->title)}}">{{$important->title}}
                 &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($important->updated_at) < 7)
                 <br/>
@@ -187,9 +172,7 @@
 
             @endforeach
             <br/><br/><br/>
-             @if($importants->isNotEmpty())
             <a class="btn btn-sm btn-primary" href="{{route('article','Important')}}">View All</a>
-            @endif
           </div>
       </div>
   </div>

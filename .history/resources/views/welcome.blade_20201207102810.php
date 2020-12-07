@@ -92,7 +92,7 @@
                 <br>
         @endforeach
         <br/><br/><br/>
-         @if($admissions->isNotEmpty())
+         @if($admission->isNotEmpty())
         <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
         @endif
       </div>
