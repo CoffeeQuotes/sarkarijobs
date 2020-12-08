@@ -29,14 +29,13 @@
 <div class="pt-5">
 
 </div>
-<div class="row">
-    <div class="pt-2 col-md-12">
-        {!! $article->description !!}
-    </div>
+<div class="pt-2 d-flex justify-content-md-center">
+    {!! $article->description !!}
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script>
     $("table").addClass("table table-responsive");
+
 </script>
 @endsection
