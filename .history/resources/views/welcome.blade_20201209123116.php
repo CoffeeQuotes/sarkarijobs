@@ -45,12 +45,13 @@
 
         @foreach($jobs as $key => $job)
             <li><a href="{{route('articleShow',$job->slug)}}">{{$job->title}}
+            &nbsp;
             @if(\Carbon\Carbon::Now()->diffInDays($job->updated_at) < 7)
               <br/>
             <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
-   </a>         {{$job->updated_at->diffForHumans()}}
-            </li>
+            {{$job->updated_at->diffForHumans()}}
+            </a></li>
 
             <br/>
         @endforeach
@@ -64,13 +65,13 @@
           <h3 class="  p-1 text-center rounded text-white bg-dark">Results</h3>
         @foreach($results as $key => $result)
             <li><a href="{{route('articleShow', $result->slug)}}">{{$result->title}}
+                &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($result->updated_at) < 7)
               <br/>
                 <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
-
-   </a>         {{$result->updated_at->diffForHumans()}}
-            </li>
+            {{$result->updated_at->diffForHumans()}}
+            </a></li>
 
             <br/>
         @endforeach
@@ -83,13 +84,13 @@
         <h3 class="  p-1 text-center rounded text-white bg-dark">Admissions</h3>
         @foreach($admissions as $key => $admission)
             <li><a href="{{route('articleShow', $admission->slug)}}">{{$admission->title}}
+                &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($admission->updated_at) < 7)
               <br/>
                 <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
-
-   </a>         {{$admission->updated_at->diffForHumans()}}
-            </li>
+            {{$admission->updated_at->diffForHumans()}}
+            </a></li>
 
                 <br>
         @endforeach
@@ -104,13 +105,13 @@
             <h3 class="  p-1 text-center rounded text-white bg-dark">Syllabus</h3>
           @foreach($syllabus as $key => $syllabi)
             <li><a href="{{route('articleShow', $syllabi->slug)}}">{{$syllabi->title}}
+                &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($syllabi->updated_at) < 7)
               <br/>
                 <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
-
-   </a>         {{$syllabi->updated_at->diffForHumans()}}
-            </li>
+            {{$syllabi->updated_at->diffForHumans()}}
+            </a></li>
 
                 <br>
           @endforeach
@@ -123,13 +124,13 @@
             <h3 class="  p-1 text-center rounded text-white bg-dark">Answer Keys</h3>
           @foreach($answerKeys as $key => $answers)
             <li><a href="{{route('articleShow',$answers->slug)}}">{{$answers->title}}
+                &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($answers->updated_at) < 7)
               <br/>
                 <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
-            </a>
             {{$answers->updated_at->diffForHumans()}}
-        </li>
+        </a></li>
 
                 <br>
           @endforeach
@@ -142,13 +143,13 @@
             <h3 class="  p-1 text-center rounded text-white bg-dark">Admit Card</h3>
           @foreach($admitCards as $key => $admit)
             <li><a href="{{route('articleShow',$admit->slug)}}">{{$admit->title}}
+                &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($admit->updated_at) < 7)
               <br/>
                 <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
-            </a>
             {{$admit->updated_at->diffForHumans()}}
-        </li>
+        </a></li>
 
                 <br>
           @endforeach
@@ -163,13 +164,13 @@
             <h3 class="  p-1 text-center rounded text-white bg-dark">Certificates</h3>
             @foreach($certificates as $key => $certificate)
               <li><a href="{{route('articleShow', $certificate->slug)}}">{{$certificate->title}}
+                &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($certificate->updated_at) < 7)
                 <br/>
                 <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
-            </a>
             {{$certificate->updated_at->diffForHumans()}}
-        </li>
+        </a></li>
 
                 <br>
             @endforeach
@@ -182,13 +183,13 @@
             <h3 class="  p-1 text-center rounded text-white bg-dark">Importants</h3>
             @foreach($importants as $key => $importants)
               <li><a href="{{route('articleShow', $important->slug)}}">{{$important->title}}
+                &nbsp;
                 @if(\Carbon\Carbon::Now()->diffInDays($important->updated_at) < 7)
                 <br/>
                 <img src="https://img.icons8.com/doodle/48/000000/new--v1.png" width="24" height="auto" />
             @endif
-            </a>
             {{$important->updated_at->diffForHumans()}}
-        </li>
+        </a></li>
 
                 <br>
 
