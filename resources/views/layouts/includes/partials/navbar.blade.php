@@ -1,7 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #313638;">
+<div class="container">
+  <nav class="navbar navbar-light fixed-top" style="background-color: #313638;">
+    <div class="container">
                 <a class="navbar-brand" href="/">{{setting('site.title')}}</a>
-                <button class="navbar-toggler" style="background-color: #F09D51;" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-                    <img src="https://img.icons8.com/plasticine/100/000000/hamburger.png" width="24" height="auto"/>
+              </div>
+                <button class="navbar-toggler" style="background-color: #fefefe;" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg enable-background="new 0 0 24 24" height="12" viewBox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 6h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z"/><path d="m4.5 15h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z"/><path d="m4.5 24h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z"/><path d="m13.5 6h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z"/><path d="m13.5 15h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z"/><path d="m13.5 24h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z"/><path d="m22.5 6h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z"/><path d="m22.5 15h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z"/><path d="m22.5 24h-3c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h3c.827 0 1.5.673 1.5 1.5v3c0 .827-.673 1.5-1.5 1.5zm-3-5c-.276 0-.5.225-.5.5v3c0 .275.224.5.5.5h3c.276 0 .5-.225.5-.5v-3c0-.275-.224-.5-.5-.5z"/></svg>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarColor03">
@@ -45,3 +48,4 @@
                   </form> --}}
                 </div>
               </nav>
+</div>

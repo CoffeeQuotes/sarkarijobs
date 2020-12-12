@@ -20,7 +20,5 @@
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
 
     </head>
-    <body class="">
+    <body>
         @include('layouts.includes.partials.navbar')
-
-

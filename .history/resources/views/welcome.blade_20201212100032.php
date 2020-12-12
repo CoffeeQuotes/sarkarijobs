@@ -176,7 +176,7 @@
         <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
         @endif
       </div>
-          {{--Impotants --}}
+          {{--Impotants -}}
             <div class="col-sm">
             <h3 class="  p-1 text-center rounded text-white bg-dark">Importants</h3>
             @foreach($importants as $key => $importants)

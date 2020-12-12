@@ -95,13 +95,13 @@
         @endforeach
 
          @if($admissions->isNotEmpty())
-        <a class="btn btn-sm btn-primary" href="{{route('article','Downloads')}}">View All</a>
+        <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
         @endif
       </div>
     </div>
     {{-- Second Row --}}
     <div class="row mt-5">
-            {{--Admit Card--}}
+            {{--Admit Card-}}
                 <div class="col-sm">
             <h3 class="  p-1 text-center rounded text-white bg-dark">Admit Card</h3>
           @foreach($admitCards as $key => $admit)
@@ -176,7 +176,7 @@
         <a class="btn btn-sm btn-primary" href="{{route('article','Results')}}">View All</a>
         @endif
       </div>
-          {{--Impotants --}}
+          {{--Impotants -}}
             <div class="col-sm">
             <h3 class="  p-1 text-center rounded text-white bg-dark">Importants</h3>
             @foreach($importants as $key => $importants)
