@@ -2,12 +2,11 @@
 @section('page_title', $article->title)
 @section('keywords', $article->meta_keyword)
 @section('description', $article->meta_description)
-
 @section('content')
-<div class="pt-5">
-    <h3><strong class="text-info">{{ $article->type}}</strong> / <span><strong class="text-info">{{ $article->category->name}}</strong></span></h3>
-</div>
-<div class="card">
+    <div class="pt-5">
+        <h3><strong class="text-info">{{ $article->type}}</strong> / <span><strong class="text-info">{{ $article->category->name}}</strong></span></h3>
+    </div>
+    <div class="card">
         <div class="card-header pt-5">
             <h2 class=""><strong class="mt-5 text-danger">Post Name - </strong><span class="pl-2">{{$article->title}}</span></h2>
         </div>
@@ -24,21 +23,21 @@
                 {{$article->excerpt}}
             </p>
         </div>
-</div>
+    </div>
 
-<div class="pt-5">
+    <div class="pt-5">
 
-</div>
-<div class="row">
-    <div class="pt-2 col-md-12">
-        <div class="table-responsive">
-        {!! $article->description !!}
+    </div>
+    <div class="row">
+        <div class="pt-2 col-md-12">
+            <div class="table-responsive">
+                {!! $article->description !!}
+            </div>
         </div>
     </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script>
-    $("table").addClass("table");
-</script>
+    <script>
+        $("table").addClass("table")
+    </script>
 @endsection

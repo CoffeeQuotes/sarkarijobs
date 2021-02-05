@@ -1,7 +1,76 @@
-
-
-
-h1, h2, h3,  h4 {
-  font-family: 'Work Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+h1 a:hover,
+h1 a:active,
+h2 a:hover,
+h2 a:active,
+h3 a:hover,
+h3 a:active,
+h4 a:hover,
+a:active,
+a:hover {
+    color: #212121;
 }
 
+
+/*h1, h2, h3,  h4 {*/
+/*font-family: 'Playfair Display', serif!important;*/
+/*}*/
+body, html {
+    /*font-family: 'Playfair Display', serif!important;*/
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    /*font-family: 'Padauk', sans-serif!important;*/
+    font-family: 'Karla', sans-serif;
+    color: #555;
+
+}
+
+.navbar > li > a:hover, .navbar > li > a:focus {
+    background-color: #FeFeFe;
+    color: #FFC0CB;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover, .navbar-expand-lg .navbar-nav .nav-link:focus, .navbar-expand-lg .navbar-nav .nav-link:active
+{
+    color: #F0AD4E!important;
+}
+a.navbar-brand {
+    display: contents;
+}
+.navbar-brand {
+    width:150px!important;
+    font-size: 24px!important;
+    background: cornsilk!important;
+}
+.navbar-brand img {
+    height: 60px!important;
+    /* put value of image height as your need */
+    float: left!important;
+    margin-right: 7px!important;
+}
+
+.neumorph {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #dbdbdb, #ffffff);
+    box-shadow:  20px 20px 60px #cfcfcf,
+    -20px -20px 60px #ffffff;
+}
+.nav-link {
+    border-radius: 2px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background: cornsilk;
+    /*box-shadow: inset 20px 20px 60px #222f3c, */
+    /*            inset -20px -20px 60px #2e3f52;*/
+}
+
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, a {
+    color: #3c1874!important;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, a:hover
+{
+    color: #283747!important;
+}
+/*Assign dropcaps class to the paragraph for which the effect is to be applied */

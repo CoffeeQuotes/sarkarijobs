@@ -11,17 +11,18 @@ class ArticleController extends Controller
     //
     public function index($type)
     {
-      $articles = Article::where('type', $type)->get();
-      if($articles->isEmpty()) {
-          return redirect('/');
-      }
-      return view('articles.index', compact('articles', 'type'));
+        $articles = Article::where('type', $type)->orderBy('created_at', 'desc')->simplepaginate(10);
+        if($articles->isEmpty()) {
+            return redirect('/');
+        }
+        return view('articles.index', compact('articles', 'type'));
     }
 
-    public function show($slug) {
+    public function show($type, $slug) {
+
         $article = Article::where('slug', $slug)->firstOrFail();
         //dd($article);
-        return view('articles.article', compact('article'));
+        return view('articles.article', compact('article', 'type'));
     }
 
     public function latestIndex() {
